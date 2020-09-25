@@ -1,40 +1,46 @@
 function generateMarkdown(data) {
-  return `# ${data.title}
-    ![badge](https://img.shields.io/static/v1?label=${data.name}&message=${data.question2}&color=green)
+  return `
+# ${data.title}
+![](https://img.shields.io/badge/Language-NodeJs-green)
 
-    ## Description
-    ${data.description}
+## Description
+${data.description}
 
-    ## Table of Contents
-    *[Installation](#Installation)
-    *[Usage](#Usage)
-    *[Contribute](#Contribute)
-    *[Tests](#Tests)
-    *[Questions](#Questions)
-    *[License](#License)
+## Table of Contents
+*[Installation](#Installation)
 
-    ## Installation
-    ${data.installation}
+*[Usage](#Usage)
 
-    ## Usage
-    ${data.usage}
+*[Contribute](#Contribute)
 
-    ## Contribute
-    ${data.contribute}
+*[Tests](#Tests)
 
-    ## Tests
-    ${data.tests}
+*[Questions](#Questions)
 
-    ## Questions
-    ${data.questions}
+*[License](#License)
 
-    ## License
+## Installation
+${data.installation}
 
-    ## Tests
-    ${data.tests}
+## Usage
+${data.usage}
 
-    ##Questions
-    For questions, please contact ${data.name} at ${data.question1} or https://github.com/${data.question2}.
+## Contribute
+${data.contribute}
+
+## Tests
+${data.tests}
+
+## Questions
+${data.questions}
+
+## License
+
+## Tests
+${data.tests}
+
+## Questions
+For questions, please contact ${data.name} at ${data.question1} or https://github.com/${data.question2}.
 
   `;
 }
