@@ -47,9 +47,20 @@ inquirer
     },
     {
       type: "input",
-      name: "questions",
+      name: "question1",
       message:
-        "Please provide your email address and GitHub username associated with this project.",
+        "Please provide your email address associated with this project.",
+    },
+    {
+      type: "input",
+      name: "question2",
+      message:
+        "Please provide your GitHub username associated with this project.",
+    },
+    {
+      type: "input",
+      name: "name",
+      message: "What is your name?",
     },
   ])
   // function to write README file
