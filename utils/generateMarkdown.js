@@ -1,5 +1,5 @@
 function generateMarkdown(data) {
-    return `
+  return `
   # ${data.title}
   ![](https://img.shields.io/badge/Language-NodeJs-green)
 
@@ -37,6 +37,6 @@ function generateMarkdown(data) {
   ## License
   This project is licensed by ${data.license}. Please visit (https://choosealicense.com/) for further information on licensing.
     `;
-  }
-  
-  module.exports = generateMarkdown;
+}
+
+module.exports = generateMarkdown;
