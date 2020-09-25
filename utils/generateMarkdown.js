@@ -1,48 +1,42 @@
 function generateMarkdown(data) {
-  return `
-# ${data.title}
-![](https://img.shields.io/badge/Language-NodeJs-green)
+    return `
+  # ${data.title}
+  ![](https://img.shields.io/badge/Language-NodeJs-green)
 
-## Description
-${data.description}
+  ## Description
+  ${data.description}
 
-## Table of Contents
-*[Installation](#Installation)
+  ## Table of Contents
+  *[Installation](#Installation)
 
-*[Usage](#Usage)
+  *[Usage](#Usage)
 
-*[Contribute](#Contribute)
+  *[Contribute](#Contribute)
 
-*[Tests](#Tests)
+  *[Tests](#Tests)
 
-*[Questions](#Questions)
+  *[Questions](#Questions)
 
-*[License](#License)
+  *[License](#License)
 
-## Installation
-${data.installation}
+  ## Installation
+  ${data.installation}
 
-## Usage
-${data.usage}
+  ## Usage
+  ${data.usage}
 
-## Contribute
-${data.contribute}
+  ## Contribute
+  ${data.contribute}
 
-## Tests
-${data.tests}
+  ## Tests
+  ${data.tests}
+  
+  ## Questions
+  For questions, please contact ${data.name} at ${data.question1} or https://github.com/${data.question2}.
 
-## Questions
-${data.questions}
-
-## License
-
-## Tests
-${data.tests}
-
-## Questions
-For questions, please contact ${data.name} at ${data.question1} or https://github.com/${data.question2}.
-
-  `;
-}
-
-module.exports = generateMarkdown;
+  ## License
+  This project is licensed by ${data.license}. Please visit (https://choosealicense.com/) for further information on licensing.
+    `;
+  }
+  
+  module.exports = generateMarkdown;

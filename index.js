@@ -20,12 +20,12 @@ inquirer
     {
       type: "input",
       name: "installation",
-      message: "Please provide installation instruction for your project",
+      message: "Please provide installation instruction for your project.",
     },
     {
       type: "input",
       name: "usage",
-      message: "Please provide usage criteria for your project",
+      message: "Please provide usage criteria for your project.",
     },
     {
       type: "list",
@@ -38,17 +38,17 @@ inquirer
       type: "input",
       name: "contribute",
       message:
-        "Please provide how others may go about contributing to this project",
+        "Please provide how others may go about contributing to this project.",
     },
     {
       type: "input",
       name: "tests",
-      message: "Please provide how others may test this project",
+      message: "Please provide how others may test this project.",
     },
     {
       type: "input",
       name: "question1",
-      message: "Please provide your email address associated with this project",
+      message: "Please provide your email address associated with this project.",
     },
     {
       type: "input",
@@ -65,7 +65,7 @@ inquirer
   // function to write README file
   .then((answers) => {
     var readMe = generateMarkdown(answers);
-    fs.writeFile("generate.md", readMe, (err) => {
+    fs.writeFile("testReadMe.md", readMe, (err) => {
       if (err) throw err;
       console.log("Successfully created a README!");
     });
